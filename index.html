@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yale University</title>
+    <link rel="stylesheet" href="style/default.css">
+    <link rel="stylesheet" href="style/index.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&family=Maven+Pro&family=Noto+Sans+KR:wght@300;400;700&family=Noto+Serif+KR:wght@300;400;500;600&family=Tajawal:wght@300&family=Unna&family=Ysabeau:wght@500;600;800&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/89762c5085.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- 웹접근성 본문바로가기 -->
+    <a href="#content" class="skip">Skip to Main Content</a>
+
+    <!-- Header -->
+    <header>
+        <div class="header_row">
+            <!-- Site Logo -->
+            <div class="header_main_logo">
+                <h1>
+                    <a href="#"><img src="images/logo-print.webp" alt="Yale University"></a>
+                </h1>
+            </div>
+            <div class="header_right">
+                <!-- Sub Nav & Button -->
+                <div class="header_right_subbar">
+                    <!-- Sub Navigation -->
+                    <div class="sub_nav">
+                        <h2 class="hide">Sub Navigation</h2>
+                        <ul>
+                            <li><a href="">Calendars</a></li>
+                            <li><a href="">Give</a></li>
+                            <li><a href="">News</a></li>
+                            <li><a href="">Directories</a></li>
+                        </ul>
+                    </div>
+                    <!-- Search Button-->
+                    <button class="search_btn"><i class="fa-solid fa-magnifying-glass"></i>Search</button>
+                    <button class="main_nav_button"><i class="fa-solid fa-bars"></i>navigation</button>
+                    <!-- Info for select-->
+                    <div class="select_menu">
+                        <div class="select_btn">
+                            <span class="sBtn_text">Info for...</span>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+
+                        <ul class="options" id="selectList">
+                            <li class="option"><span class="option_text">Students</span></li>
+                            <li class="option"><span class="option_text">Faculty</span></li>
+                            <li class="option"><span class="option_text">Staff</span>
+                            </li>
+                            <li class="option"><span class="option_text">Alumni</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Go Button-->
+                    <button class="go_btn" onclick="goToSelectedPage()">Go</button>
+                </div>
+                <!-- Main Nav -->
+                <div class="main_nav">
+                    <ul>
+                        <li class="main_nav_title"><a href="">About Yale</a>
+                            <ul>
+                                <li><a href="">Leadership & Organization</a></li>
+                                <li><a href="">Yale Facts</a></li>
+                                <li><a href="">Traditons & History</a></li>
+                                <li><a href="">Yale & the World</a></li>
+                                <li><a href="">Visiting</a></li>
+                            </ul>
+                        </li>
+                        <li class="main_nav_title"><a href="">Academics</a>
+                            <ul>
+                                <li><a href="">Undergraaduate Study</a></li>
+                                <li><a href="">Graduate & Professional</a></li>
+                                <li><a href="">Departments & Programs</a></li>
+                                <li><a href="">Global Education</a></li>
+                                <li><a href="">Summer Session</a></li>
+                                <li><a href="">Non-Degree Offerings</a></li>
+                                <li><a href="">Online Learning</a></li>
+                            </ul>
+                        </li>
+                        <li class="main_nav_title"><a href="">Admissions</a>
+                            <ul>
+                                <li><a href="">Undegraduate</a></li>
+                                <li><a href="">Graduate & Professional<br>Scholls</a></li>
+                                <li><a href="">Financial Aid</a></li>
+                                <li><a href="">International Students</a></li>
+                                <li><a href="">Summer Session</a></li>
+                                <li><a href="">Non-Degree Seeking<br>Students</a></li>
+                                <li><a href="">World Fellows Program</a></li>
+                            </ul>
+                        </li>
+                        <li class="main_nav_title"><a href="">Reserch</a>
+                        </li>
+                        <li class="main_nav_title"><a href="">Collections</a>
+                            <ul>
+                                <li><a href="">Research at Yale</a></li>
+                                <li><a href="">Libraries</a></li>
+                                <li><a href="">Museums & Galleries</a></li>
+                                <li><a href="">Centers & Institutes</a></li>
+                                <li><a href="">Digital Collections & Open Resources</a></li>
+                            </ul>
+                        </li>
+                        <li class="main_nav_title"><a href="">Life at Yale</a>
+                            <ul>
+                                <li><a href="">Art & Culture</a></li>
+                                <li><a href="">Athletics & Recreation</a></li>
+                                <li><a href="">Belonging at Yale</a></li>
+                                <li><a href="">Health & Wellness</a></li>
+                                <li><a href="">New Haven</a></li>
+                                <li><a href="">Residential Life</a></li>
+                                <li><a href="">Sevice</a></li>
+                                <li><a href="">Student Groups &<br>Activities</a></li>
+                                <li><a href="">Virtual Yale</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- body -->
+    <main>
+        <!-- 첫번째 섹션 -->
+        <section class="section1">
+            <div class="section_row">
+                <div class="bg_img"></div>
+                <div class="bg_gray"></div>
+                <div class="article_box">
+                    <h3>#Yale2023</h3>
+                    <h2>Commencement 2023</h2>
+                    <p>Yale’s 322nd Commencement will be held<br> on Monday, May 22, with celebrations<br>
+                        happening
+                        across
+                        campus this weekend.<br> Follow coverage of all the festivities,<br> including stories,
+                        slideshows,
+                        student<br>profiles, and more.</p>
+
+                    <button>Learn More<i class="fa-solid fa-caret-right"></i></button>
+                </div>
+            </div>
+        </section>
+
+        <!-- 두번째 섹션 -->
+        <section class="section2">
+            <div class="news_row">
+                <div class="news_header">
+                    <h2>
+                        The latest from Yale News
+                    </h2>
+                    <div class="news_explore">
+                        <p>Explore More news</p>
+                        <div class="news_menu">
+                            <div class="news_btn">
+                                <span class="newsBtn_text">All News</span>
+                                <i class="fa-solid fa-sort-down"></i>
+                            </div>
+                            <ul class="news_options">
+                                <li class="news_option"><span class="news_option_text">Alumni</span></li>
+                                <li class="news_option"><span class="news_option_text">Business</span></li>
+                                <li class="news_option"><span class="news_option_text">Environment</span></li>
+                                <li class="news_option"><span class="news_option_text">International</span></li>
+                                <li class="news_option"><span class="news_option_text">Law</span></li>
+                            </ul>
+                        </div>
+                        <button onclick="goToSelectedNewsPage()">GO</button>
+                    </div>
+                </div>
+                <div class="news_body">
+                    <div class="news_article">
+                        <img src="images/ynews-collage-profiles-2023.webp" alt="#">
+                        <div class="news_title">
+                            <span><a
+                                    href="https://news.yale.edu/2023/05/19/celebrating-decade-native-community-scholarship">
+                                    Alexander brings a Class Day message of freedom, education, and hamecoming
+                                </a></span>
+                            <p class="news_date">May 21,2023</p>
+                        </div>
+                    </div>
+                    <div class="news_list">
+                        <div class="news_list_box">
+                            <span><a
+                                    href="https://news.yale.edu/2023/05/22/yale-awards-honorary-degrees-nine-who-embody-excellence">
+                                    Eleven graduating seniors honored with top Yale College prizes
+                                </a></span>
+                            <p class="news_date">
+                                May 21,2024
+                            </p>
+                        </div>
+                        <div class="news_list_box">
+                            <span><a href="https://news.yale.edu/2023/05/22/commencement-2023-all-hail-graduates">
+                                    Commencement 2023: All hail the graduates!
+                                </a></span>
+                            <p class="news_date">
+                                May 21,2024
+                            </p>
+                        </div>
+                        <div class="news_list_box">
+                            <span><a
+                                    href="https://jackson.yale.edu/news/new-ai-platform-aims-to-improve-disaster-response/">
+                                    New AI platform aims to improve disaster response
+                                </a></span>
+                            <p class="news_date">
+                                May 21,2024
+                            </p>
+                        </div>
+                        <div class="news_list_box">
+                            <span>
+                                <a
+                                    href="https://medicine.yale.edu/intmed/cardio/news-article/yale-study-documents-staggering-toll-of-health-disparities-for-black-americans/">
+                                    Study documents staggering toll of health disparities for Black Americans
+                                </a>
+                            </span>
+                            <p class="news_date">
+                                May 21,2024
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section3">
+            <div class="section3_row">
+                <div class="section3_title">
+                    <h2>A closer look for the curious</h2>
+                    <h3>The Parts That Make Yale Whole</h3>
+                </div>
+            </div>
+            <div class="section3_bg_img"></div>
+            <div class="section3_body"></div>
+            <div class="section3_row">
+                <table class="section3_table">
+                    <tr>
+                        <td>
+                            <div class="table_topic_first">
+                                <div class="topic_menu">
+                                    <div class="topic_btn">
+                                        <span class="topicBtn_text">Explore by topic</span>
+                                        <i class="fa-solid fa-sort-down"></i>
+                                    </div>
+                                    <ul class="topic_options">
+                                        <li class="topic_option"><span class="topic_option_text">Everything</span>
+                                        </li>
+                                        <li class="topic_option"><span class="topic_option_text">Academics</span>
+                                        </li>
+                                        <li class="topic_option"><span class="topic_option_text">Collections</span>
+                                        </li>
+                                        <li class="topic_option"><span class="topic_option_text">Discoveries</span>
+                                        </li>
+                                        <li class="topic_option"><span class="topic_option_text">Experiences</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <p>or</p>
+                                <button class="shuffle"><i class="fa-solid fa-rotate-right"></i>shuffle</button>
+                            </div>
+                        </td>
+                        <td>
+                            <a href="https://berkeley.yalecollege.yale.edu/">
+                                <div class="table_topic_title">
+                                    <h4>Berkeley College</h4>
+                                    <h5>Explore the college</h5>
+                                </div>
+                            </a>
+                        </td>
+                        <td colspan="2" rowspan="2">
+                            <div class="table_topic">
+                                <p>Discoveries</p>
+                                <h4>In death of dinosaurs,<br>it was all about the<br>asteroid</h4>
+                                <span>Volcanoes did not play a direct role in the<br> destruction of the
+                                    dinosaurs.</span>
+                                <button>learn more<i class="fa-solid fa-caret-right"></i></button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="https://library.medicine.yale.edu/cushingcenter">
+                                <div class="table_topic_title">
+                                    <h4>Cushing Center</h4>
+                                    <h5>Explore the center</h5>
+                                </div>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="https://saybrook.yalecollege.yale.edu/">
+                                <div class="table_topic_title">
+                                    <h4>Saybrook College</h4>
+                                    <h5>Explore the college</h5>
+                                </div>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" rowspan="2">
+                            <div class="table_topic">
+                                <p>Places</p>
+                                <h4>Yale Center for British<br>Art</h4>
+                                <span>Presented to Yale by Paul Mellon, the center<br> houses the largest collection
+                                    of British art outside<br>the United Kingdom.</span>
+                                <div class="button">
+                                    <button>Explore the center<i class="fa-solid fa-caret-right"></i></button>
+                                    <button class="video"><i class="fa-solid fa-video"></i>Watch video</button>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <a href="https://branford.yalecollege.yale.edu/">
+                                <div class="table_topic_title">
+                                    <h4>Brandford College</h4>
+                                    <h5>Explore the college</h5>
+                                </div>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="https://yalebulldogs.com/">
+                                <div class="table_topic_title">
+                                    <h4>Athletics</h4>
+                                    <h5>Meet the teams</h5>
+                                </div>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="https://news.yale.edu/2021/09/01/analysis-unlocks-secret-vinland-map-its-fake">
+                                <div class="table_topic_title">
+                                    <h4>Analysis unlocks<br>secret of the<br>Vinland Map - it's<br>a fake</h4>
+                                    <h5>Learn more</h5>
+                                </div>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="https://www.flickr.com/photos/yaleuniversity/albums/72157708663733004">
+                                <div class="table_topic_title">
+                                    <h4>Class Day</h4>
+                                    <h5>View photos</h5>
+                                </div>
+                            </a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <div class="footer_row">
+                <div class="footer_body">
+                    <div class="footer_list">
+                        <div class="footer_list_box">
+                            <h2>Helpful links</h2>
+                            <ul>
+                                <li><a href="https://www.yale.edu/contact-us">Contact Us</a></li>
+                                <li><a href="https://covid19.yale.edu/">COVID-19 Info</a></li>
+                                <li><a href="https://your.yale.edu/work-yale/careers">Careers</a></li>
+                                <li><a href="https://emergency.yale.edu/">Emergency Info</a></li>
+                                <li><a href="https://privacy.yale.edu/resources/privacy-statement">Privacy Policy</a>
+                                </li>
+                                <li><a href="https://your.yale.edu/community/public-safety">Public Safety</a></li>
+                                <li><a href="https://usability.yale.edu/web-accessibility/accessibility-yale">Accessibility
+                                        at Yale</a></li>
+                                <li><a href="https://www.yale.edu/nondiscrimination">Nondiscrimination &<br>Title LX</a>
+                                </li>
+                                <li><a href="https://westcampus.yale.edu/">Yale West Campus</a></li>
+                                <li><a href=""></a></li>
+                                <li><a href=""></a></li>
+                                <li><a href="https://communications.yale.edu/mobile">Yale Mobile</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer_list_box">
+                            <h2>Visiting Yale</h2>
+                            <ul>
+                                <li><a href="https://visitorcenter.yale.edu/tours">Campus Tours</a></li>
+                                <li><a href="https://www.yale.edu/about-yale/visiting">Maps & Directions</a></li>
+                                <li><a href="https://visitorcenter.yale.edu/">Yale Visitor Center</a></li>
+                                <li><a href="https://www.yale.edu/collections/museums-and-libraries">Museums &
+                                        Galleries</a></li>
+                                <li><a href="https://www.yale.edu/life-yale/new-haven">New Haven</a></li>
+                                <li><a href="https://www.yale.edu/about-yale/visiting">More Visit Resources</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer_insta">
+                        <a class="footer_insta_link" href="https://www.instagram.com/yale/" " target=" _blank""><img
+                                src="images/spring2023-instagram.jpeg" alt="#"></a>
+                        <span><i class="fa-brands fa-instagram"></i> Yale on instagram</span>
+                    </div>
+                </div>
+                <div class="footer_info">
+                    <div class="footer_copyright">
+                        <span>Copyright <i class="fa-regular fa-copyright"></i> 2023 Yale University</span>
+                        <span>All Rights Reserved</span>
+                        <span>Contact Web Editor</span>
+                    </div>
+                    <div class="footer_sns">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-youtube"></i>
+                        <i class="fa-brands fa-weibo"></i>
+                        <span>All Social Media
+                            <i class="fa-solid fa-caret-right"></i>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+
+
+    <script src=" script/index.js">
+    </script>
+</body>
+
+</html>
