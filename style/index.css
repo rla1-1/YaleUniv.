@@ -1180,34 +1180,10 @@ footer {
 
 @media screen and (max-width: 739px) {
 
-    .header_row,
-    .section_row,
-    .news_row,
-    .section3_row,
-    .footer_row {
-        width: 480px;
-    }
-
     .search_btn span,
     .main_nav_button p {
         display: none;
     }
-
-    .bg_img {
-        width: 740px;
-        height: 500px;
-        background-image: url("../images/cross-campus-feature_0\ \(1\).webp");
-        background-repeat: no-repeat;
-        background-size: contain;
-    }
-
-    .bg_gray {
-        top: 350px;
-        left: 80px;
-        width: 450px;
-        height: 300px;
-    }
-
 
     .sub_nav,
     .select_menu,
@@ -1252,11 +1228,10 @@ footer {
     }
 
     .news_header {
-        width: 740px;
+        width: 480px;
         display: flex;
         flex-direction: column;
     }
-
 
     .article_box {
         top: 400px;
@@ -1366,7 +1341,6 @@ footer {
 
     .header_main_logo {
         z-index: 10;
-
     }
 
     header .header_main_logo img {
@@ -1549,6 +1523,33 @@ footer {
 }
 
 
+@media screen and (min-width: 500px) {
+
+    .header_row,
+    .section_row,
+    .news_row,
+    .section3_row,
+    .footer_row {
+        width: 480px;
+    }
+
+    .bg_img {
+        width: 740px;
+        height: 500px;
+        background-image: url("../images/cross-campus-feature_0\ \(1\).webp");
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    .bg_gray {
+        top: 350px;
+        left: 80px;
+        width: 450px;
+        height: 300px;
+    }
+
+}
+
 @media screen and (min-width: 740px) {
 
     .header_row,
@@ -1558,7 +1559,6 @@ footer {
     .section3_row {
         width: 720px;
     }
-
 
     .search_btn,
     .main_nav_button {
@@ -1582,10 +1582,12 @@ footer {
     }
 
     .bg_img {
-        width: 980px;
+        width: 100%;
+        margin-right: 0;
         height: 750px;
         background-repeat: no-repeat;
         background-image: url("../images/cross-campus-feature_0.webp");
+        background-size: contain;
     }
 
     .bg_gray {
@@ -1671,10 +1673,10 @@ footer {
     }
 
     .bg_img {
-        width: 900px;
+        width: 100%;
         height: 632px;
         margin-left: 300px;
-        margin-right: -110px;
+        margin-right: 0px;
         float: right;
         background-repeat: no-repeat;
         position: relative;
