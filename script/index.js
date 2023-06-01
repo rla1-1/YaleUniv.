@@ -134,6 +134,7 @@ function mainNavButton() {
     document.querySelector(".header").classList.toggle("active");
     if (navButton.classList.contains("active")) {
         navButtonText.textContent = "CLOSE"
+
     } else {
         navButtonText.textContent = "NAVIGATION"
     }

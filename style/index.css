@@ -1180,10 +1180,34 @@ footer {
 
 @media screen and (max-width: 739px) {
 
+    .header_row,
+    .section_row,
+    .news_row,
+    .section3_row,
+    .footer_row {
+        width: 480px;
+    }
+
     .search_btn span,
     .main_nav_button p {
         display: none;
     }
+
+    .bg_img {
+        width: 740px;
+        height: 500px;
+        background-image: url("../images/cross-campus-feature_0\ \(1\).webp");
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    .bg_gray {
+        top: 350px;
+        left: 80px;
+        width: 450px;
+        height: 300px;
+    }
+
 
     .sub_nav,
     .select_menu,
@@ -1523,36 +1547,6 @@ footer {
         line-height: 50px;
     }
 }
-
-
-
-@media screen and (min-width: 500px) {
-
-    .header_row,
-    .section_row,
-    .news_row,
-    .section3_row,
-    .footer_row {
-        width: 480px;
-    }
-
-    .bg_img {
-        width: 740px;
-        height: 500px;
-        background-image: url("../images/cross-campus-feature_0\ \(1\).webp");
-        background-repeat: no-repeat;
-        background-size: contain;
-    }
-
-    .bg_gray {
-        top: 350px;
-        left: 80px;
-        width: 450px;
-        height: 300px;
-    }
-
-}
-
 
 
 @media screen and (min-width: 740px) {
