@@ -19,7 +19,7 @@
     <a href="#content" class="skip">Skip to Main Content</a>
 
     <!-- Header -->
-    <header>
+    <header class="header">
         <div class="header_row">
             <!-- Site Logo -->
             <div class="header_main_logo">
@@ -41,8 +41,13 @@
                         </ul>
                     </div>
                     <!-- Search Button-->
-                    <button class="search_btn"><i class="fa-solid fa-magnifying-glass"></i>Search</button>
-                    <button class="main_nav_button"><i class="fa-solid fa-bars"></i>navigation</button>
+                    <button class="search_btn"><i class="fa-solid fa-magnifying-glass"></i>
+                        <span>Search</span>
+                    </button>
+                    <button class="main_nav_button" onclick="mainNavButton()"><i class="fa-solid fa-bars"></i><i
+                            class="fa-solid fa-x"></i>
+                        <p class="nav_button_text">navigation</p>
+                    </button>
                     <!-- Info for select-->
                     <div class="select_menu">
                         <div class="select_btn">
@@ -124,6 +129,15 @@
                 </div>
             </div>
         </div>
+        <div class="header_row">
+            <div class="search_bar">
+                <form action=" #" method="get">
+                    <input type="text" placeholder="Search..." id="input_focus">
+                    <input type="submit" value="검색"><i class="fa-solid fa-magnifying-glass"></i>
+                </form>
+            </div>
+        </div>
+        <div class="nav_bg"></div>
     </header>
 
     <!-- body -->
@@ -143,7 +157,7 @@
                         slideshows,
                         student<br>profiles, and more.</p>
 
-                    <button>Learn More<i class="fa-solid fa-caret-right"></i></button>
+                    <button onclick="learnMore()">Learn More<i class="fa-solid fa-caret-right"></i></button>
                 </div>
             </div>
         </section>
@@ -157,20 +171,22 @@
                     </h2>
                     <div class="news_explore">
                         <p>Explore More news</p>
-                        <div class="news_menu">
-                            <div class="news_btn">
-                                <span class="newsBtn_text">All News</span>
-                                <i class="fa-solid fa-sort-down"></i>
+                        <div class="news_explore_button">
+                            <div class="news_menu">
+                                <div class="news_btn">
+                                    <span class="newsBtn_text">All News</span>
+                                    <i class="fa-solid fa-sort-down"></i>
+                                </div>
+                                <ul class="news_options">
+                                    <li class="news_option"><span class="news_option_text">Alumni</span></li>
+                                    <li class="news_option"><span class="news_option_text">Business</span></li>
+                                    <li class="news_option"><span class="news_option_text">Environment</span></li>
+                                    <li class="news_option"><span class="news_option_text">International</span></li>
+                                    <li class="news_option"><span class="news_option_text">Law</span></li>
+                                </ul>
                             </div>
-                            <ul class="news_options">
-                                <li class="news_option"><span class="news_option_text">Alumni</span></li>
-                                <li class="news_option"><span class="news_option_text">Business</span></li>
-                                <li class="news_option"><span class="news_option_text">Environment</span></li>
-                                <li class="news_option"><span class="news_option_text">International</span></li>
-                                <li class="news_option"><span class="news_option_text">Law</span></li>
-                            </ul>
+                            <button onclick="goToSelectedNewsPage()">GO</button>
                         </div>
-                        <button onclick="goToSelectedNewsPage()">GO</button>
                     </div>
                 </div>
                 <div class="news_body">

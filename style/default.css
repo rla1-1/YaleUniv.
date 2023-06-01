@@ -68,10 +68,11 @@ html {
 body {
     width: 100%;
     background: #fff;
-    min-width: 320px;
+    min-width: 500px;
     -webkit-text-size-adjust: none;
     word-wrap: break-word;
     word-break: break-all;
+    overflow-x: hidden;
 }
 
 body,

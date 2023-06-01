@@ -1,3 +1,5 @@
+
+
 // header info for... & go 
 
 const optionMenu = document.querySelector(".select_menu");
@@ -107,3 +109,33 @@ topicOption.forEach(topic_option => {
     })
 })
 
+//search bar
+const section1 = document.querySelector(".section1");
+const searchBtn = document.querySelector(".search_btn");
+
+searchBtn.addEventListener("click", () => {
+    const inputFocus = document.getElementById("input_focus");
+    section1.classList.toggle("active");
+    inputFocus.focus();
+})
+
+function learnMore() {
+    window.location.href = 'https://alumni.yale.edu/';
+}
+
+
+//navigation bar
+const navButton = document.querySelector(".main_nav_button");
+const navButtonText = document.querySelector(".nav_button_text");
+
+function mainNavButton() {
+    navButton.classList.toggle("active");
+    document.querySelector(".main_nav").classList.toggle("active");
+    document.querySelector(".header").classList.toggle("active");
+    if (navButton.classList.contains("active")) {
+        navButtonText.textContent = "CLOSE"
+    } else {
+        navButtonText.textContent = "NAVIGATION"
+    }
+
+}
