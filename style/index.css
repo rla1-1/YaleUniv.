@@ -1161,6 +1161,12 @@ footer {
     display: none;
 }
 
+.footer_sns {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 .footer_sns span {
     color: #fff;
     font-size: 1.2em;
@@ -1170,13 +1176,149 @@ footer {
     padding-left: 10px;
 }
 
-.footer_sns>i {
+.footer_sns div>i {
     color: #fff;
     font-size: 1.6em;
     padding: 0 5px;
 }
 
 /* 반응형 */
+
+@media screen and (max-width: 499px) {
+
+    .header_row,
+    .section_row,
+    .news_row,
+    .section3_row,
+    .footer_row {
+        width: 300px;
+    }
+
+    .bg_img {
+        width: 600px;
+        height: 400px;
+        background-image: url("../images/cross-campus-feature_0\ \(1\).webp");
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    .bg_gray {
+        top: 250px;
+        left: 100px;
+        width: 300px;
+        height: 300px;
+    }
+
+    .article_box {
+        top: 270px;
+        left: 15px;
+    }
+
+    .news_article img {
+        width: 330px;
+    }
+
+    .news_btn {
+        width: 250px;
+    }
+
+    .footer_copyright span {
+        display: block;
+    }
+
+    .footer_copyright span::after {
+        display: none;
+    }
+
+    .footer_sns {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer_sns span {
+        width: 280px;
+        margin-top: 20px;
+    }
+
+    .news_list {
+        width: 300px;
+        padding-left: 0;
+    }
+
+    .news_list {
+        margin-top: 150px;
+        width: 300px;
+    }
+
+    .news_explore {
+        position: relative;
+        top: 450px;
+    }
+
+    .news_menu .news_options {
+        width: 250px;
+    }
+
+    .footer_copyright span {
+        font-size: 1.4em;
+        line-height: 1.9em;
+    }
+
+}
+
+@media screen and (min-width:500px) and (max-width: 739px) {
+    .news_article img {
+        width: 500px;
+    }
+
+    .news_btn {
+        width: 400px;
+    }
+
+    .footer_sns span {
+        width: 200px;
+    }
+
+    .news_header {
+        width: 480px;
+    }
+
+    .news_list {
+        margin-top: 140px;
+        width: 480px;
+    }
+
+    .news_explore {
+        position: relative;
+        top: 515px;
+    }
+
+    .news_menu .news_options {
+        width: 400px;
+    }
+
+    .article_box {
+        top: 400px;
+    }
+
+    .footer_sns span {
+        width: 200px;
+    }
+
+    .footer_copyright {
+        text-align: center;
+    }
+
+    .footer_info {
+        width: 480px;
+    }
+
+    .footer_copyright span {
+        font-size: 1.5em;
+        line-height: 1.9em;
+    }
+
+}
 
 @media screen and (max-width: 739px) {
 
@@ -1228,13 +1370,8 @@ footer {
     }
 
     .news_header {
-        width: 480px;
         display: flex;
         flex-direction: column;
-    }
-
-    .article_box {
-        top: 400px;
     }
 
     .section2 {
@@ -1242,25 +1379,8 @@ footer {
         top: 150px;
     }
 
-    .news_explore {
-        position: relative;
-        top: 515px;
-    }
-
     .news_header h2 {
         font-size: 1.8em;
-    }
-
-    .news_article img {
-        width: 500px;
-    }
-
-    .news_btn {
-        width: 430px;
-    }
-
-    .news_menu .news_options {
-        width: 430px;
     }
 
     .news_body {
@@ -1269,10 +1389,7 @@ footer {
         margin-top: -70px;
     }
 
-    .news_list {
-        margin-top: 140px;
-        width: 480px;
-    }
+
 
     .news_list_box:nth-child(3),
     .news_list_box:nth-child(4) {
@@ -1291,10 +1408,6 @@ footer {
     .footer_list ul li:nth-child(10),
     .footer_list ul li:nth-child(11) {
         display: none;
-    }
-
-    .footer_info {
-        width: 480px;
     }
 
     .footer_copyright span:nth-child(2)::after {
@@ -1322,6 +1435,19 @@ footer {
 
     .main_nav>ul {
         top: 170px;
+    }
+
+    .footer_sns span {
+        width: 200px;
+    }
+
+    .footer_copyright {
+        text-align: center;
+    }
+
+    .footer_copyright span {
+        font-size: 1.5em;
+        line-height: 1.9em;
     }
 }
 
@@ -1490,21 +1616,15 @@ footer {
         flex-direction: column-reverse;
     }
 
-    .footer_copyright {
-        text-align: center;
-    }
-
-    .footer_copyright span {
-        font-size: 1.5em;
-        line-height: 1.9em;
+    .footer_sns div>i {
+        font-size: 3em;
+        line-height: 1.5em;
     }
 
     .footer_sns span {
-        float: right;
         margin-bottom: 15px;
         display: inline-block;
         font-weight: bold;
-        width: 200px;
         height: 50px;
         text-align: center;
         line-height: 50px;
