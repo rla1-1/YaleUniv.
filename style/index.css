@@ -1209,17 +1209,35 @@ footer {
         height: 300px;
     }
 
+    .main_nav ul>li>a {
+        width: 270px;
+    }
+
+    .nav_bg {
+        width: 500px;
+    }
+
+    .section2 {
+        position: relative;
+        top: 130px;
+    }
+
+    .main_nav>ul {
+        width: 500px;
+    }
+
+
     .article_box {
         top: 270px;
         left: 15px;
     }
 
     .news_article img {
-        width: 330px;
+        width: 100%;
     }
 
     .news_btn {
-        width: 250px;
+        width: 230px;
     }
 
     .footer_copyright span {
@@ -1264,9 +1282,46 @@ footer {
         line-height: 1.9em;
     }
 
+    .footer_list ul {
+        width: 300px;
+    }
+
 }
 
 @media screen and (min-width:500px) and (max-width: 739px) {
+    .bg_img {
+        width: 500px;
+        height: 500px;
+        margin: 0;
+        background-image: url("../images/cross-campus-feature_0\ \(1\).webp");
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    .bg_gray {
+        top: 250px;
+        left: 100px;
+        width: 450px;
+        height: 260px;
+    }
+
+    .main_nav ul>li>a {
+        width: 440px;
+    }
+
+    .nav_bg {
+        width: 100%;
+    }
+
+    .main_nav>ul {
+        width: 100%;
+    }
+
+    .article_box {
+        top: 280px;
+        left: 40px;
+    }
+
     .news_article img {
         width: 500px;
     }
@@ -1295,10 +1350,6 @@ footer {
 
     .news_menu .news_options {
         width: 400px;
-    }
-
-    .article_box {
-        top: 400px;
     }
 
     .footer_sns span {
@@ -1343,10 +1394,6 @@ footer {
         height: 130px;
     }
 
-    .main_nav ul>li>a {
-        width: 440px;
-    }
-
     .main_nav>ul {
         top: 130px;
     }
@@ -1372,11 +1419,6 @@ footer {
     .news_header {
         display: flex;
         flex-direction: column;
-    }
-
-    .section2 {
-        position: relative;
-        top: 150px;
     }
 
     .news_header h2 {
@@ -1427,6 +1469,14 @@ footer {
 
     .nav_bg {
         height: 170px;
+    }
+
+    .nav_bg {
+        width: 100%;
+    }
+
+    .main_nav>ul {
+        width: 100%;
     }
 
     .main_nav ul>li>a {
@@ -1485,7 +1535,6 @@ footer {
 
     .nav_bg {
         background: #00366c;
-        width: 100%;
         position: absolute;
         top: 0;
         left: 0;
@@ -1554,7 +1603,6 @@ footer {
     .main_nav>ul {
         display: flex;
         flex-direction: column;
-        width: 100%;
         height: 500px;
         z-index: 3;
         background: #00366c;
@@ -1653,19 +1701,8 @@ footer {
         width: 480px;
     }
 
-    .bg_img {
-        width: 740px;
-        height: 500px;
-        background-image: url("../images/cross-campus-feature_0\ \(1\).webp");
-        background-repeat: no-repeat;
-        background-size: contain;
-    }
-
-    .bg_gray {
-        top: 350px;
-        left: 80px;
-        width: 450px;
-        height: 300px;
+    .footer_list ul {
+        width: 480px;
     }
 
 }
