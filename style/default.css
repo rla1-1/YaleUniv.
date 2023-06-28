@@ -5,6 +5,7 @@
 * {
     outline: 0 !important;
     box-sizing: border-box;
+    word-break: keep-all;
 }
 
 html,
